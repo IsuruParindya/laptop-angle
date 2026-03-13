@@ -1,11 +1,14 @@
-import { useDeviceAngle } from "./useDeviceAngle"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import AnglePage from "./pages/AnglePage"
+import CompassPage from "./pages/CompassPage"
 
 export default function App() {
-  const angle = useDeviceAngle()
-
   return (
-    <div>
-      <p>Angle: {angle !== null ? `${angle}°` : "No data"}</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AnglePage />} />
+        <Route path="/compass" element={<CompassPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
