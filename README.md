@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# 📐 Angle & Compass Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The **Angle & Compass Tool** is a simple and efficient digital solution designed to help users measure, visualize, and work with angles and compass directions. It combines two essential utilities into one lightweight application: an **Angle Measurement Tool** and a **Compass**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📏 Angle Tool
 
-## Expanding the ESLint configuration
+* Measure angles accurately
+* Visual representation of angles
+* Easy-to-use interface for quick calculations
+* Suitable for educational and practical use
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🧭 Compass
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Displays real-time directional data
+* Helps determine orientation (North, South, East, West)
+* Useful for navigation and positioning tasks
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Usage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Open the application.
+2. Select either:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   * **Angle Tool** to measure or visualize angles
+   * **Compass** to view direction and orientation
+3. Interact with the UI to get the required measurements or directions.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 💡 Applications
+
+* Educational purposes (math, geometry)
+* Navigation assistance
+* Engineering and design references
+* General utility use
+
+---
+
+## ⚙️ Requirements
+
+* Compatible device (laptop/PC)
+* Basic system support for running the application
+
+---
+
+## 🚀 Future Improvements
+
+* Enhanced UI/UX design
+* Integration with sensors for real-time accuracy
+* Additional measurement tools
+
+---
+
+## 📌 Notes
+
+This project is designed for simplicity and efficiency. It can be expanded further based on user needs and technical requirements.
+
+---
+
+## 👨‍💻 Author
+
+Developed as part of a learning/research project.
+
+---
